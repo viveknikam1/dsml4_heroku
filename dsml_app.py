@@ -18,7 +18,7 @@ def predict():
     #sal = model.predict(float(request.form['Experience']))
     sal = model.predict(X)
     sal_final = str(round(sal[0],2))
-    str1 = '<h1>Dear '+ request.form['Name'] +', your expected salary after '+ request.form['Experience'] +'Yrs Experience is '+ sal_final+' LPA</h1>'
+    str1 = '<h2>Dear '+ request.form['Name'] +', salary after '+ request.form['Experience'] +'Yrs Experience is '+ sal_final+' LPA</h2>'
     return str1
 
 if __name__=='__main__':
